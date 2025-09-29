@@ -1,0 +1,11 @@
+@use 'variables' as vars;
+
+body {
+  font-family: vars.$font-family-base;
+  color: vars.$color-text;
+}
+
+.navbar {
+  background-color: vars.$color-primary;
+}
+
