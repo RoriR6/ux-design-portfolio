@@ -1,16 +1,35 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
+.navbar {
+  background-color: #E2D2C8;
+}
+
 .main-container {
   max-width: 1280px;
   width: 100%;
   margin: auto;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-} 
+}
 
 .custom-navbar {
   background-color: #e2d2c8 !important;
   min-height: 60px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
 }
 
+@media (max-width: 768px) {
+  .custom-navbar {
+    position: sticky;
+    top: 0;
+  }
+}
 .custom-navbar .navbar-brand img {
   height: 40px;
   width: auto;
@@ -76,7 +95,6 @@
 }
 
 /* Stile dei link nel dropdown */
-
 .navbar-label a {
   text-align: center;
   color: black;
@@ -191,22 +209,18 @@
 }
 
 /*per responsive mobile*/
-
 @media (max-width: 768px) {
   .hero-title h1 {
     font-size: 24px;
     padding: 0 1rem;
   }
-
   .hero-subtitle {
     font-size: 16px;
   }
-
   .box-presentazione {
     flex-direction: column;
     align-items: center;
   }
-
   .box-presentazione .imgprofilo {
     width: 100%;
     margin: 0 auto 20px;
@@ -214,13 +228,11 @@
     display: flex;
     justify-content: center;
   }
-
   .imgprofilo img {
     width: 80%;
     height: auto;
     margin: 0;
   }
-
   .box-presentazione p {
     width: 100%;
     font-size: 18px;
@@ -228,9 +240,7 @@
     padding: 20px;
   }
 }
-
 /* Sistemazione Card */
-
 .mesderniersprojets {
   margin-top: 60px;
 }
@@ -275,7 +285,7 @@
   width: 100%;
   /*max-width: 384px;
   height: auto;*/
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4/3;
   display: block;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
@@ -300,45 +310,35 @@
     padding: 5px;
     font-size: 18px;
   }
-
   .mesderniersprojets h3::after {
     margin: 5px;
     width: 80%;
   }
-
   .cards {
     flex-direction: column;
     align-items: center;
     padding: 8px;
   }
-
   .card {
     max-width: 100%;
   }
-
   .card img {
     max-width: 100%;
   }
-
   .card-text {
     font-size: 1rem;
   }
-
   .contacts {
     padding: 5px;
   }
-
   .contacts h3 {
     font-size: 16px;
   }
-
   .contacts h3::after {
     width: 80%;
   }
 }
-
 /* bottone */
-
 .btnProject {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -372,7 +372,6 @@
 }
 
 /* Contacts */
-
 .contacts h3 {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -407,7 +406,6 @@
 }
 
 /* Footer */
-
 .footer {
   display: flex;
   flex-direction: row;
@@ -441,9 +439,7 @@
 }
 
 /* PROJECTS STYLE PAGE (PROJECT.HTML) */
-
 /*Header*/
-
 .header {
   text-align: center;
   padding: 20px 0;
@@ -483,7 +479,6 @@
 }
 
 /* projects card */
-
 .projectCard h3 {
   position: relative;
   font-family: montserrat, sans-serif;
@@ -570,30 +565,24 @@
 }
 
 /* Responsive: su schermi piccoli */
-
 @media (max-width: 768px) {
   .projectCards {
     flex-direction: column;
     align-items: center;
   }
-
   .projectImg,
   .projectText {
     flex: 1 1 100%;
     max-width: 100%;
   }
-
   .projectText {
     margin-top: 10px;
   }
-
   .projectCard h3::after {
     width: 80%;
   }
 }
-
 /* CV PAGE STYLE */
-
 .titolo-cv h1 {
   font-size: 40px;
   font-weight: 500;
@@ -669,9 +658,7 @@
 .cv-grid {
   display: grid;
   grid-template-columns: 1fr 300px;
-  grid-template-areas:
-    "jobs skills"
-    "formation skills";
+  grid-template-areas: "jobs skills" "formation skills";
   gap: 24px;
   align-items: start;
 }
@@ -679,9 +666,11 @@
 .jobs {
   grid-area: jobs;
 }
+
 .formation {
   grid-area: formation;
 }
+
 .skills {
   grid-area: skills;
   text-align: right;
@@ -714,10 +703,7 @@
 @media (max-width: 768px) {
   .cv-grid {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "jobs"
-      "formation"
-      "skills";
+    grid-template-areas: "jobs" "formation" "skills";
   }
   .skills {
     text-align: left;
@@ -727,9 +713,7 @@
     width: 80%;
   }
 }
-
 /* CONTACT PAGE STYLE*/
-
 .formContact {
   display: flex;
   flex-wrap: wrap;
@@ -765,18 +749,17 @@
   .formContact {
     flex-direction: column-reverse;
   }
-
   .boxForm,
   .boxImg {
     flex: 1 1 100%;
     max-width: 100%;
   }
-
   .boxImg {
     margin-bottom: 30px;
   }
-
   .boxImg img {
     max-height: 300px;
   }
 }
+
+/*# sourceMappingURL=stile.css.map */
