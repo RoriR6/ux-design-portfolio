@@ -533,8 +533,10 @@ body {
 
 .projectImg {
   flex: 1 1 400px;
+  aspect-ratio: 16/9;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .projectImg img {
@@ -542,7 +544,7 @@ body {
   max-width: 500px;
   height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
 }
 
