@@ -1,6 +1,11 @@
+#Node modules
 node_modules/
+
+#VS Code setting
 .vscode/
+
+#Build output
 dist/
 
+#MacOS system files
 .DS_Store
-node_modules/
