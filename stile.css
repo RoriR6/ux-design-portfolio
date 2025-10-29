@@ -1,16 +1,10 @@
-$font-family-base: "Montserrat", sans-serif;
-$color-primary: #E2D2C8;
-$color-hover-button: #ADA099;
-$color-hover-navbar: #005a5d;
-$color-text: #000000;
-
 body {
-  font-family: $font-family-base;
-  color: $color-text;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
 }
 
 .navbar {
-  background-color: $color-primary;
+  background-color: #E2D2C8;
 }
 
 .main-container {
@@ -19,7 +13,7 @@ body {
   margin: auto;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-} 
+}
 
 .custom-navbar {
   background-color: #e2d2c8 !important;
@@ -36,7 +30,6 @@ body {
     top: 0;
   }
 }
-
 .custom-navbar .navbar-brand img {
   height: 40px;
   width: auto;
@@ -102,7 +95,6 @@ body {
 }
 
 /* Stile dei link nel dropdown */
-
 .navbar-label a {
   text-align: center;
   color: black;
@@ -217,22 +209,18 @@ body {
 }
 
 /*per responsive mobile*/
-
 @media (max-width: 768px) {
   .hero-title h1 {
     font-size: 24px;
     padding: 0 1rem;
   }
-
   .hero-subtitle {
     font-size: 16px;
   }
-
   .box-presentazione {
     flex-direction: column;
     align-items: center;
   }
-
   .box-presentazione .imgprofilo {
     width: 100%;
     margin: 0 auto 20px;
@@ -240,13 +228,11 @@ body {
     display: flex;
     justify-content: center;
   }
-
   .imgprofilo img {
     width: 80%;
     height: auto;
     margin: 0;
   }
-
   .box-presentazione p {
     width: 100%;
     font-size: 18px;
@@ -254,9 +240,7 @@ body {
     padding: 20px;
   }
 }
-
 /* Sistemazione Card */
-
 .mesderniersprojets {
   margin-top: 60px;
 }
@@ -301,7 +285,7 @@ body {
   width: 100%;
   /*max-width: 384px;
   height: auto;*/
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4/3;
   display: block;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
@@ -326,45 +310,35 @@ body {
     padding: 5px;
     font-size: 18px;
   }
-
   .mesderniersprojets h3::after {
     margin: 5px;
     width: 80%;
   }
-
   .cards {
     flex-direction: column;
     align-items: center;
     padding: 8px;
   }
-
   .card {
     max-width: 100%;
   }
-
   .card img {
     max-width: 100%;
   }
-
   .card-text {
     font-size: 1rem;
   }
-
   .contacts {
     padding: 5px;
   }
-
   .contacts h3 {
     font-size: 16px;
   }
-
   .contacts h3::after {
     width: 80%;
   }
 }
-
 /* bottone */
-
 .btnProject {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -398,7 +372,6 @@ body {
 }
 
 /* Contacts */
-
 .contacts h3 {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -433,7 +406,6 @@ body {
 }
 
 /* Footer */
-
 .footer {
   display: flex;
   flex-direction: row;
@@ -467,9 +439,7 @@ body {
 }
 
 /* PROJECTS STYLE PAGE (PROJECT.HTML) */
-
 /*Header*/
-
 .header {
   text-align: center;
   padding: 20px 0;
@@ -509,7 +479,6 @@ body {
 }
 
 /* projects card */
-
 .projectCard h3 {
   position: relative;
   font-family: montserrat, sans-serif;
@@ -564,8 +533,10 @@ body {
 
 .projectImg {
   flex: 1 1 400px;
+  aspect-ratio: 16/9;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .projectImg img {
@@ -573,7 +544,7 @@ body {
   max-width: 500px;
   height: auto;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px;
 }
 
@@ -596,30 +567,24 @@ body {
 }
 
 /* Responsive: su schermi piccoli */
-
 @media (max-width: 768px) {
   .projectCards {
     flex-direction: column;
     align-items: center;
   }
-
   .projectImg,
   .projectText {
     flex: 1 1 100%;
     max-width: 100%;
   }
-
   .projectText {
     margin-top: 10px;
   }
-
   .projectCard h3::after {
     width: 80%;
   }
 }
-
 /* CV PAGE STYLE */
-
 .titolo-cv h1 {
   font-size: 40px;
   font-weight: 500;
@@ -695,9 +660,7 @@ body {
 .cv-grid {
   display: grid;
   grid-template-columns: 1fr 300px;
-  grid-template-areas:
-    "jobs skills"
-    "formation skills";
+  grid-template-areas: "jobs skills" "formation skills";
   gap: 24px;
   align-items: start;
 }
@@ -705,9 +668,11 @@ body {
 .jobs {
   grid-area: jobs;
 }
+
 .formation {
   grid-area: formation;
 }
+
 .skills {
   grid-area: skills;
   text-align: right;
@@ -740,10 +705,7 @@ body {
 @media (max-width: 768px) {
   .cv-grid {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "jobs"
-      "formation"
-      "skills";
+    grid-template-areas: "jobs" "formation" "skills";
   }
   .skills {
     text-align: left;
@@ -753,14 +715,13 @@ body {
     width: 80%;
   }
 }
-
 /* CONTACT PAGE STYLE*/
-
 .formContact {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .boxForm {
@@ -787,22 +748,47 @@ body {
   padding: 0 5px 0 5px;
 }
 
+/* bottone form*/
+.btn-wrapper {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.btn-form {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #e2d2c8;
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 50px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  background-color: #ada099;
+}
+
 @media (max-width: 768px) {
   .formContact {
     flex-direction: column-reverse;
   }
-
   .boxForm,
   .boxImg {
     flex: 1 1 100%;
     max-width: 100%;
   }
-
   .boxImg {
     margin-bottom: 30px;
   }
-
   .boxImg img {
     max-height: 300px;
   }
 }
+
+/*# sourceMappingURL=stile.css.map */

@@ -1,0 +1,15 @@
+$font-family-base: "Montserrat", sans-serif;
+$color-primary: #E2D2C8;
+$color-hover-button: #ADA099;
+$color-hover-navbar: #005a5d;
+$color-text: #000000;
+
+body {
+  font-family: $font-family-base;
+  color: $color-text;
+}
+
+.navbar {
+  background-color: $color-primary;
+}
+
